@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="rhai.css">
+<script src="script.js"></script>
+<!-- HTML File -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Boss</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts"></div>
+    <div class="container">
+        <h1 class="animate">Hi, crush mo ba ako?</h1>
+        <p>Buti naman rhicylle 😁</p>
+        <div class="image">
+            <img src="hype.jpg" alt="Valentine's Day">
+        </div>
+        <div class="audio-container">
+            <button class="play-button" onclick="playAudio()">Click me boss</button>
+            <audio id="valentine-audio" src="LastNightonEarth.mp3"></audio>
+        </div>
+    </div>
+    <script>
+        function playAudio() {
+            const audio = document.getElementById('valentine-audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
